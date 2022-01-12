@@ -5,7 +5,12 @@ Sudoku solver is a javascript app that uses an API "Solve Sudoku" by Sean Osier
 https://rapidapi.com/sosier/api/solve-sudoku/
 
 ## Installation
-Use npm to install the node modules. Enter the first three npm commands down below then edit the package.json before running the last npm command.
+Use npm to install the node modules. Enter the first three npm commands down below then edit the package.json before running the last npm command. Lastly, create a .env file to store your Rapid API Key.
+
+```.env
+RAPID_API_KEY=YOUR_API_KEY
+```
+
 ```json
  "main": "./js/app.js" 
  "scripts": {
