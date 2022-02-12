@@ -4,6 +4,7 @@ const solutionDisplay = document.getElementById('solution')
 const box = 81;
 let submission = []
 
+// Create inputs and grid layout
 for (let i = 0; i < box; i++) {
     const div = document.createElement('div')
     div.classList.add('grid')
@@ -27,6 +28,7 @@ for (let i = 0; i < box; i++) {
     puzzleBoard.appendChild(div)
 }
 
+// Combines all value that the user enters
 const joinValues = () => {
     const inputs = document.querySelectorAll('input')
     inputs.forEach(input => {
@@ -40,6 +42,7 @@ const joinValues = () => {
     console.log(submission)
 }
 
+// Populates each input section with the solution
 const populateValues = (isSolvable, solution) => {
     const inputs = document.querySelectorAll('input')
     if (isSolvable && solution) {
